@@ -23,11 +23,8 @@ namespace Clickatell_Service
         public static string CreateRecipientList(string to)
         {
             string[] tmp = to.Split(',');
-            to = "[\"";
-            to = to + string.Join("\",\"", tmp);
-            to = to + "\"]";
+            to = string.Format("['\'{0}'\']", string.Join("\",\"", tmp));
             return to;
         }
-        
     }
 }
