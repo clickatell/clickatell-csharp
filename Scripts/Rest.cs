@@ -13,6 +13,7 @@ namespace Clickatell_Service
         //This takes the API Key and JSON array of data and posts it to the Message URL to send the SMS's
         public static string Post(string Token, string json)
         {
+            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
             var httpWebRequest = (HttpWebRequest)WebRequest.Create("https://platform.clickatell.com/messages");
             httpWebRequest.ContentType = "application/json";
             httpWebRequest.Method = "POST";
