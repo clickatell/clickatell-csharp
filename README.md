@@ -55,7 +55,7 @@ The Json array will include an array of messages which each in turn contains:
 * The number it was sent to
 * an error message if applicable (see link below to error messages)
 
-##Reference Links and More Info:
+## Reference Links and More Info:
 
 Found a bug or missing a feature? Log it here and we will take a look.
 https://github.com/ninjakitteh69/Clickatell-Csharp/issues
